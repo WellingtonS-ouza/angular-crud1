@@ -8,6 +8,8 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { SharedModule } from './../shared/shared.module';
 import { CoursesRoutingModule } from './courses-routing.module';
 import { CoursesComponent } from './courses/courses.component';
+import {MatIconModule} from '@angular/material/icon';
+
 
 
 @NgModule({
@@ -21,7 +23,8 @@ import { CoursesComponent } from './courses/courses.component';
     MatCardModule,
     MatToolbarModule,
     MatProgressSpinnerModule,
-    SharedModule
+    SharedModule,
+    MatIconModule
   ]
 })
 export class CoursesModule { }

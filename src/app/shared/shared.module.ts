@@ -3,7 +3,8 @@ import { NgModule } from '@angular/core';
 
 import { ErrorDialogComponent } from './components/error-dialog/error-dialog.component';
 import { MatDialogModule } from '@angular/material/dialog';
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
+import { CategoryPipe } from './pipes/category.pipe';
 
 
 
@@ -12,7 +13,8 @@ import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
-    ErrorDialogComponent
+    ErrorDialogComponent,
+    CategoryPipe
 
   ],
   imports: [
@@ -21,6 +23,6 @@ import {MatButtonModule} from '@angular/material/button';
     MatButtonModule
 
   ],
-  exports: [ErrorDialogComponent]
+  exports: [ErrorDialogComponent, CategoryPipe]
 })
 export class SharedModule { }
